@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --color-grenadier: 17 74% 43%;    /* #D74108 */
+    --color-pearl-bush: 350 7% 7%;     /* #131112 */
+    --color-dark-grey: 0 0% 21%;       /* #353535 */
+    --color-foggy-grey: 51 14% 76%;    /* #CBC8B9 */
+    
+    /* Semantic Colors */
+    --background: 350 7% 7%;           /* #131112 */
+    --foreground: 51 14% 76%;          /* #CBC8B9 */
+    --primary: var(--color-grenadier);
+    --primary-foreground: 0 0% 100%;
+    --muted: 0 0% 21%;                 /* #353535 */
+    --muted-foreground: 51 14% 76%;    /* #CBC8B9 */
+    --border: 51 14% 76%;              /* #CBC8B9 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Typography Scale */
+  h1 {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  h2 {
+    @apply font-serif text-3xl md:text-4xl font-semibold leading-tight;
+  }
+
+  h3 {
+    @apply font-serif text-2xl md:text-3xl font-medium leading-snug;
+  }
+
+  h4 {
+    @apply font-serif text-xl md:text-2xl font-medium leading-snug;
+  }
+
+  p {
+    @apply font-sans text-base leading-relaxed;
+  }
+
+  .text-caption {
+    @apply font-sans text-sm leading-normal text-muted-foreground;
+  }
+}
+
+/* Layout Utilities */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.main-article {
+  grid-column: span 8;
+}
+
+.side-articles {
+  grid-column: span 4;
+}
+
+/* Brand Typography Classes */
+.display-large {
+  @apply font-serif text-5xl font-bold leading-tight;
+}
+
+.display-medium {
+  @apply font-serif text-4xl font-semibold leading-tight;
+}
+
+.display-small {
+  @apply font-serif text-3xl font-medium leading-snug;
+}
+
+.body-large {
+  @apply font-sans text-lg leading-relaxed;
+}
+
+.body-medium {
+  @apply font-sans text-base leading-relaxed;
+}
+
+.body-small {
+  @apply font-sans text-sm leading-normal;
+}
