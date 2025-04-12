@@ -1,12 +1,13 @@
+import { Globe, Twitter, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'Twitter', href: '#' },
-    { name: 'Facebook', href: '#' },
-    { name: 'Instagram', href: '#' },
-    { name: 'LinkedIn', href: '#' },
-    { name: 'YouTube', href: '#' },
+    { name: 'Twitter', href: '#', icon: Twitter },
+    { name: 'Facebook', href: '#', icon: Facebook },
+    { name: 'Instagram', href: '#', icon: Instagram },
+    { name: 'LinkedIn', href: '#', icon: Linkedin },
+    { name: 'YouTube', href: '#', icon: Youtube },
   ];
 
   const footerLinks = [
@@ -18,57 +19,68 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="border-t border-border bg-card-background">
-      <div className="container mx-auto px-4 py-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 text-text-secondary">
-            <span className="text-sm">© Paperio News 2025</span>
-            <span className="text-sm">All right reserved</span>
+    <footer className="border-t border-border bg-background">
+      {/* Top Section */}
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between text-text-secondary text-sm">
+          <div className="flex flex-col items-left gap-1">
+            <span className="text-text-secondary">All right reserved</span>
+            <span className="text-text-primary">© Drafted Daily 2025</span>
           </div>
 
           <div className="text-center">
-            <div className="text-sm text-text-secondary mb-1">We're Locate At</div>
-            <div className="text-sm text-text-primary">7297 East Old Maple Boulevard, Suite 209-B, Washington</div>
+            <span className="text-text-secondary">We're Locate At</span>
+            <div className="text-text-primary">7297 East Old Maple Boulevard, Suite 209-B, Washington</div>
           </div>
 
           <div className="text-right">
-            <div className="text-sm text-text-secondary mb-1">Contact</div>
-            <div className="text-sm text-text-primary">(123) 420-9421</div>
+            <span className="text-text-secondary">Contact</span>
+            <div className="text-text-primary">(123) 420-9421</div>
           </div>
         </div>
+      </div>
 
-        <div className="mt-8 flex items-center justify-between">
-          <div className="flex items-center gap-6">
-            <Link to="/" className="flex items-center gap-3">
-              <img src="/logo.svg" alt="Paperio" className="h-10 w-10" />
-              <span className="text-2xl font-semibold text-text-primary">Paperio News</span>
-            </Link>
+      {/* Main Footer Content */}
+      <div className="bg-background">
+        <div className="container mx-auto px-4 py-8">
+          <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center gap-6">
+              <Globe className="h-28 w-28" />
+              <span className="text-9xl font-ibarra font-bold text-text-primary">Drafted Daily</span>
+            </div>
           </div>
+        </div>
+      </div>
 
-          <div className="flex items-center gap-8">
-            {footerLinks.map((link) => (
+      {/* Bottom Navigation */}
+      <div className="border-t border-border">
+        <div className="flex justify-between container mx-auto px-4 py-4">
+          {/* Social Links */}
+          <div className="flex items-center gap-4">
+            {socialLinks.map(({ name, href, icon: Icon }) => (
               <Link
-                key={link.name}
-                to={link.href}
-                className="text-sm text-text-secondary hover:text-text-primary transition"
+                key={name}
+                to={href}
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-button-secondary hover:opacity-80 transition"
+                aria-label={name}
               >
-                {link.name}
+                <Icon className="w-5 h-5 text-text-primary" />
               </Link>
             ))}
           </div>
-        </div>
-
-        <div className="mt-6 flex items-center gap-4">
-          {socialLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.href}
-              className="flex items-center justify-center w-8 h-8 rounded-full bg-button-secondary text-button-secondary-text"
-              aria-label={link.name}
-            >
-              <div className="w-4 h-4 bg-current rounded-full" />
-            </Link>
-          ))}
+          <div className="flex items-center justify-end py-4">
+            <div className="flex items-center gap-8">
+              {footerLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-sm text-text-secondary hover:text-text-primary transition"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </footer>

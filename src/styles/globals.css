@@ -8,10 +8,10 @@
   :root {
     /* Light Theme */
     --background: #E5E1D5;
-    --card-background: #FFFFFF;
+    --card-background: #D0CCC0;
     --border: #343434;
-    --text-primary: #131112;
-    --text-secondary: #353535;
+    --text-primary: #363636;
+    --text-secondary: #989690;
     --text-accent: #D74108;
     --button-primary: #D74108;
     --button-primary-text: #FFFFFF;
