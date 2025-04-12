@@ -6,32 +6,45 @@
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --color-grenadier: 17 74% 43%;    /* #D74108 */
-    --color-pearl-bush: 350 7% 7%;     /* #131112 */
-    --color-dark-grey: 0 0% 21%;       /* #353535 */
-    --color-foggy-grey: 51 14% 76%;    /* #CBC8B9 */
-    
-    /* Semantic Colors */
-    --background: 350 7% 7%;           /* #131112 */
-    --foreground: 51 14% 76%;          /* #CBC8B9 */
-    --primary: var(--color-grenadier);
-    --primary-foreground: 0 0% 100%;
-    --muted: 0 0% 21%;                 /* #353535 */
-    --muted-foreground: 51 14% 76%;    /* #CBC8B9 */
-    --border: 51 14% 76%;              /* #CBC8B9 */
+    /* Light Theme */
+    --background: #CBC8B9;
+    --card-background: #FFFFFF;
+    --border: #E0E0E0;
+    --text-primary: #131112;
+    --text-secondary: #353535;
+    --text-accent: #D74108;
+    --button-primary: #D74108;
+    --button-primary-text: #FFFFFF;
+    --button-secondary: #CBC8B9;
+    --button-secondary-text: #131112;
   }
-}
 
-@layer base {
+  [data-theme="dark"] {
+    /* Dark Theme */
+    --background: #131112;
+    --card-background: #1E1E1E;
+    --border: #353535;
+    --text-primary: #CBC8B9;
+    --text-secondary: #E0E0E0;
+    --text-accent: #FF5C2C;
+    --button-primary: #FF5C2C;
+    --button-primary-text: #131112;
+    --button-secondary: #1E1E1E;
+    --button-secondary-text: #CBC8B9;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-helvetica transition-colors duration-200;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-ibarra;
+  }
+
   * {
     @apply border-border;
   }
   
-  body {
-    @apply bg-background text-foreground font-sans;
-  }
-
   /* Typography Scale */
   h1 {
     @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;

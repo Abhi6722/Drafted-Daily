@@ -7,25 +7,33 @@ export default {
   theme: {
     extend: {
       colors: {
-        grenadier: "hsl(var(--color-grenadier))",
-        "pearl-bush": "hsl(var(--color-pearl-bush))",
-        "dark-grey": "hsl(var(--color-dark-grey))",
-        "foggy-grey": "hsl(var(--color-foggy-grey))",
-        border: "hsl(var(--border))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
+        // Light theme
+        'pearl-bush-light': '#131112',
+        'dark-grey-light': '#353535',
+        'grenadier-light': '#D74108',
+        'foggy-grey-light': '#CBC8B9',
+        
+        // Dark theme
+        'pearl-bush-dark': '#CBC8B9',
+        'dark-grey-dark': '#E0E0E0',
+        'grenadier-dark': '#FF5C2C',
+        'foggy-grey-dark': '#1E1E1E',
+
+        // Theme variables
+        background: 'var(--background)',
+        'card-background': 'var(--card-background)',
+        border: 'var(--border)',
+        'text-primary': 'var(--text-primary)',
+        'text-secondary': 'var(--text-secondary)',
+        'text-accent': 'var(--text-accent)',
+        'button-primary': 'var(--button-primary)',
+        'button-primary-text': 'var(--button-primary-text)',
+        'button-secondary': 'var(--button-secondary)',
+        'button-secondary-text': 'var(--button-secondary-text)',
       },
       fontFamily: {
-        serif: ['"Ibarra Real Nova"', 'serif'],
-        sans: ['Helvetica', 'Arial', 'sans-serif'],
+        'ibarra': ['Ibarra Real Nova', 'serif'],
+        'helvetica': ['Helvetica', 'system-ui', 'sans-serif']
       },
       fontSize: {
         xs: ['0.75rem', { lineHeight: '1rem' }],
