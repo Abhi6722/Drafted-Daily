@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Sun, Cloud, CloudRain } from 'lucide-react';
+import { Sun } from 'lucide-react';
 
 const HeaderContainer = styled.header`
   padding: 2rem 1rem;

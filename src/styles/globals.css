@@ -7,9 +7,9 @@
 @layer base {
   :root {
     /* Light Theme */
-    --background: #CBC8B9;
+    --background: #E5E1D5;
     --card-background: #FFFFFF;
-    --border: #E0E0E0;
+    --border: #343434;
     --text-primary: #131112;
     --text-secondary: #353535;
     --text-accent: #D74108;

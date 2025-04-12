@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Article } from '../types/article';
-import { Calendar, Clock, Share2 } from 'lucide-react';
+import { Calendar, Share2 } from 'lucide-react';
 
 const DetailContainer = styled.article`
   max-width: 800px;

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const StyleGuide = () => {
   return (
     <div className="container py-12 space-y-12">
