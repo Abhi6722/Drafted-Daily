@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import ArticleDetail from '../components/ArticleDetail';
-import PopularArticles from '../components/PopularArticles';
+import ArticleSidebar from '../components/ArticleSidebar';
 import { articles } from '../data/articles';
 
 const ArticleDetailPage = () => {
@@ -26,50 +26,7 @@ const ArticleDetailPage = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="col-span-4">
-          <PopularArticles />
-          
-          {/* War News */}
-          <div className="border border-border border-l-0">
-            <div className="p-6">
-              <h3 className="text-2xl font-serif font-medium mb-4">Fierce Battles Rage as Major Offensive Launched in Conflict Zone</h3>
-              <div className="aspect-video bg-card-background mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1580130775562-0ef92da028de?q=80&w=300"
-                  alt="War zone"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex items-center gap-2 text-sm text-text-secondary">
-                <span>War</span>
-                <span className="text-text-accent">&#9670;</span>
-                <span>Hannah.J</span>
-                <span className="text-text-accent">&#9670;</span>
-                <span>24/12/2024</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Designer Ad */}
-          <div className="border border-border border-l-0 p-6 bg-card-background">
-              <h3 className="text-xl font-serif font-medium mb-4">Open For Designer Now!</h3>
-              <div className="space-y-4">
-                <div className="aspect-video bg-card-background mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=300"
-                    alt="Designer workspace"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <ul className="space-y-2 text-sm">
-                  <li>• For age that between 23 - 50 years old</li>
-                  <li>• Have a good taste of design</li>
-                  <li>• Have 2 years of experience in design</li>
-                  <li>• Can stay at New York for some periode</li>
-                </ul>
-            </div>
-          </div>
-        </div>
+        <ArticleSidebar />
       </div>
     </main>
   );

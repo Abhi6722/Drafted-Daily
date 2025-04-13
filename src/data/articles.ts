@@ -137,114 +137,20 @@ As more chambers are explored and artifacts cataloged, archaeologists anticipate
     priority: 'main',
     publishedAt: '2024-12-24T12:00:00Z'
   },
-  {
-    id: '1',
-    title: 'Historic Climate Agreement Reached at Global Summit',
-    subtitle: 'World leaders commit to ambitious carbon reduction targets',
-    author: 'Sarah Johnson',
-    content: 'In a landmark decision, representatives from 195 countries have agreed to unprecedented measures to combat climate change...',
-    fullContent: `In a landmark decision that will reshape global environmental policy for decades to come, representatives from 195 countries have unanimously agreed to unprecedented measures to combat climate change at the 2025 Global Climate Summit in Geneva.
-
-The agreement, dubbed the "Geneva Accord," sets binding targets for carbon emission reductions across all participating nations, with developed countries pledging to achieve carbon neutrality by 2040. Developing nations will follow a modified timeline, reaching the same goal by 2050, with substantial financial and technological support from their developed counterparts.
-
-Key provisions of the agreement include:
-• A global carbon pricing mechanism
-• Massive investment in renewable energy infrastructure
-• Protection of critical forest systems and biodiversity
-• Creation of a $100 billion annual climate adaptation fund
-
-"This is more than just another climate agreement," said UN Secretary-General António Guterres. "It represents a fundamental shift in how we approach our relationship with the planet."
-
-The accord has been praised by environmental groups worldwide, though some critics argue that the timeline should be even more aggressive given the accelerating pace of climate change.`,
-    image: {
-      src: 'https://images.unsplash.com/photo-1620316462488-4e3f6f5bf8cd',
-      alt: 'Global Climate Summit'
-    },
-    category: 'news',
-    priority: 'main',
-    publishedAt: '2025-03-15T09:00:00Z',
-    relatedArticles: []
-  },
-  {
-    id: '2',
-    title: 'Tech Innovation Transforms Healthcare',
-    author: 'Michael Chen',
-    content: 'Breakthrough developments in artificial intelligence are revolutionizing how doctors diagnose and treat patients...',
-    fullContent: `Artificial intelligence is fundamentally transforming healthcare delivery, with new breakthroughs promising to revolutionize everything from diagnosis to treatment planning. Leading medical institutions worldwide are implementing AI-powered systems that can analyze medical images, predict patient outcomes, and even assist in surgical procedures with unprecedented accuracy.
-
-At the forefront of this revolution is the newly developed AI system at Mayo Clinic, which has demonstrated a 99% accuracy rate in detecting early-stage cancers - a significant improvement over traditional methods. "We're seeing AI catch things that even experienced radiologists might miss," explains Dr. Sarah Williams, head of AI implementation at Mayo Clinic.
-
-The implications for patient care are profound:
-• Faster and more accurate diagnoses
-• Personalized treatment plans based on genetic profiles
-• Reduced healthcare costs through improved efficiency
-• Better prediction of patient outcomes
-
-However, medical professionals emphasize that AI will augment rather than replace human doctors. "The goal is to enhance human capability, not substitute it," says Dr. Williams.`,
-    category: 'news',
-    priority: 'secondary',
-    publishedAt: '2025-03-15T10:30:00Z',
-    image: {
-      src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d',
-      alt: 'Modern hospital technology'
-    }
-  },
-  {
-    id: '3',
-    title: 'Local Arts Festival Draws Record Crowds',
-    author: 'Emily Rodriguez',
-    content: 'The city\'s annual arts festival attracted over 50,000 visitors this weekend, showcasing works from both established and emerging artists...',
-    fullContent: `The Metropolitan Arts Festival has shattered all previous attendance records, drawing more than 50,000 visitors to the city center this weekend. The three-day event, now in its 15th year, featured an unprecedented array of visual arts, performances, and interactive installations from both established and emerging artists.
-
-This year's festival introduced several innovative elements:
-• Virtual reality art exhibitions
-• Live collaborative murals
-• Interactive sound installations
-• Pop-up performance spaces throughout the city
-
-"We wanted to break down the barriers between artists and audience," explains Festival Director Maria Santos. "Art should be accessible, interactive, and part of our daily lives."
-
-Local businesses reported a significant boost in revenue during the festival, with hotels reaching full capacity and restaurants experiencing hour-long wait times. The economic impact is estimated at $3.5 million for the local economy.
-
-The festival's success has already led to discussions about expanding next year's event to accommodate the growing interest.`,
-    category: 'arts',
-    priority: 'tertiary',
-    publishedAt: '2025-03-15T11:00:00Z',
-    image: {
-      src: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea',
-      alt: 'Arts Festival'
-    }
-  },
-  {
-    id: '4',
-    title: 'Revolutionary Electric Aircraft Makes First Flight',
-    author: 'James Wilson',
-    content: 'The world\'s first fully electric commercial aircraft completed its maiden voyage, marking a historic milestone in aviation...',
-    fullContent: `In a historic achievement for sustainable aviation, the world's first fully electric commercial aircraft successfully completed its maiden voyage yesterday. The E-175, developed by AeroTech Industries, flew for 90 minutes, covering a distance of 300 miles while carrying 100 passengers.
-
-The revolutionary aircraft features:
-• Advanced lithium-air batteries with unprecedented energy density
-• Regenerative braking system during landing
-• Ultra-efficient electric motors
-• Smart energy management system
-
-"This flight marks the beginning of a new era in aviation," said AeroTech CEO Lisa Chen. "We've proven that electric commercial flight is not just possible, but practical."
-
-The development has major implications for the aviation industry's carbon footprint, with estimates suggesting that widespread adoption of electric aircraft could reduce aviation-related emissions by up to 80% by 2040.`,
-    category: 'news',
-    priority: 'secondary',
-    publishedAt: '2025-03-15T12:00:00Z',
-    image: {
-      src: 'https://images.unsplash.com/photo-1559627755-42213a8b59c6',
-      alt: 'Electric Aircraft'
-    }
-  },
   //Popular Articles
   {
     id: 'massive-wildfire',
     title: "Massive Wildfire Sweeps Across Northern California,...",
     author: "Johan Statman",
-    content: 'A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby\'s auction in New York...',
+    content: `A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world's largest and oldest known tomb, dating back over 5,000 years. The massive burial complex, located near the ancient city of Saqgara, is believed to belong to a previously unknown pharaoh from the early dynastic period.
+
+The tomb spans several acres and contains intricate carvings, hieroglyphs, and over 100 burial chambers, some holding well-preserved mummies. Inside, researchers found a treasure trove of artifacts, including gold jewelry, ceremonial weapons, and pottery, offering new insights into early Egyptian civilization.
+
+Excavation teams are calling this discovery one of the most significant finds in decades, as it could rewrite parts of Egypt's history. Experts believe the sheer size and grandeur of the tomb suggest the buried ruler held immense power and influence.
+
+International teams of archaeologists and Egyptologists are now working around the clock to document and preserve the site, with more details expected to emerge in the coming weeks as further chambers are explored.
+
+The discovery has already begun to reshape our understanding of ancient Egyptian civilization and its early development.`,
     fullContent: `A massive wildfire has erupted across Northern California, scorching tens of thousands of acres and forcing thousands of residents to evacuate as emergency crews battle the fast-moving blaze. The fire, fueled by dry conditions, high temperatures, and strong winds, has already destroyed multiple homes and structures in several rural communities.
 
 According to Cal Fire, the blaze—now named the Iron Ridge Fire—was first reported early Monday morning and spread rapidly due to wind gusts exceeding 40 miles per hour. Within hours, the fire had consumed over 30,000 acres, prompting Governor Gavin Newsom to declare a state of emergency for the affected counties. More than 2,500 firefighters have been deployed to contain the fire, supported by air tankers, helicopters, and ground equipment.
@@ -274,7 +180,15 @@ As containment efforts continue, the full extent of the damage remains unknown. 
     id: 'stock-market-plummets',
     title: "Stock Market Plummets Tech Report Quarterly Losses",
     author: "Manuel Pereira",
-    content: 'A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby\'s auction in New York...',
+    content: `A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world's largest and oldest known tomb, dating back over 5,000 years. The massive burial complex, located near the ancient city of Saqgara, is believed to belong to a previously unknown pharaoh from the early dynastic period.
+
+The tomb spans several acres and contains intricate carvings, hieroglyphs, and over 100 burial chambers, some holding well-preserved mummies. Inside, researchers found a treasure trove of artifacts, including gold jewelry, ceremonial weapons, and pottery, offering new insights into early Egyptian civilization.
+
+Excavation teams are calling this discovery one of the most significant finds in decades, as it could rewrite parts of Egypt's history. Experts believe the sheer size and grandeur of the tomb suggest the buried ruler held immense power and influence.
+
+International teams of archaeologists and Egyptologists are now working around the clock to document and preserve the site, with more details expected to emerge in the coming weeks as further chambers are explored.
+
+The discovery has already begun to reshape our understanding of ancient Egyptian civilization and its early development.`,
     fullContent: `The stock market took a sharp downturn today as several major tech companies reported disappointing quarterly earnings, shaking investor confidence and triggering a widespread sell-off. The tech-heavy Nasdaq dropped by over 3%, its steepest one-day decline in nearly a year, while the S&P 500 and Dow Jones also closed significantly lower.
 
 Leading the downturn were earnings reports from some of Silicon Valley's biggest names. Companies like Meta, Alphabet, and Tesla missed Wall Street expectations, citing a mix of reduced consumer spending, increased operational costs, and global economic headwinds. Apple, although slightly above forecasts, issued a warning about softer demand in the coming quarters, which further spooked the market.
@@ -304,7 +218,15 @@ As markets digest the wave of disappointing earnings, analysts recommend a cauti
     id: 'hurricane-fiona',
     title: "Hurricane Fiona Makes Landfall in Florida, Severe...",
     author: "Akhira Hinata",
-    content: 'A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby\'s auction in New York...',
+    content: `A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world's largest and oldest known tomb, dating back over 5,000 years. The massive burial complex, located near the ancient city of Saqgara, is believed to belong to a previously unknown pharaoh from the early dynastic period.
+
+The tomb spans several acres and contains intricate carvings, hieroglyphs, and over 100 burial chambers, some holding well-preserved mummies. Inside, researchers found a treasure trove of artifacts, including gold jewelry, ceremonial weapons, and pottery, offering new insights into early Egyptian civilization.
+
+Excavation teams are calling this discovery one of the most significant finds in decades, as it could rewrite parts of Egypt's history. Experts believe the sheer size and grandeur of the tomb suggest the buried ruler held immense power and influence.
+
+International teams of archaeologists and Egyptologists are now working around the clock to document and preserve the site, with more details expected to emerge in the coming weeks as further chambers are explored.
+
+The discovery has already begun to reshape our understanding of ancient Egyptian civilization and its early development.`,
     fullContent: `Hurricane Fiona has made a devastating landfall in Florida, unleashing powerful winds, torrential rainfall, and widespread flooding across the region. The Category 4 storm barreled into the state’s eastern coastline early this morning, leaving a trail of destruction in its wake and prompting emergency declarations across multiple counties.
 
 Winds reaching up to 140 miles per hour uprooted trees, downed power lines, and caused structural damage to homes and businesses. Several coastal communities, including Daytona Beach, Melbourne, and Port St. Lucie, experienced severe flooding, with streets submerged and rescue teams working around the clock to assist stranded residents.
@@ -334,7 +256,15 @@ As cleanup and recovery efforts begin, the focus remains on ensuring the safety 
     id: 'earth-like-planet',
     title: "NASA Confirms Discovery of Earth-Like Planet in Nearby",
     author: "Rachel Velerossa T",
-    content: 'A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby\'s auction in New York...',
+    content: `A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world's largest and oldest known tomb, dating back over 5,000 years. The massive burial complex, located near the ancient city of Saqgara, is believed to belong to a previously unknown pharaoh from the early dynastic period.
+
+The tomb spans several acres and contains intricate carvings, hieroglyphs, and over 100 burial chambers, some holding well-preserved mummies. Inside, researchers found a treasure trove of artifacts, including gold jewelry, ceremonial weapons, and pottery, offering new insights into early Egyptian civilization.
+
+Excavation teams are calling this discovery one of the most significant finds in decades, as it could rewrite parts of Egypt's history. Experts believe the sheer size and grandeur of the tomb suggest the buried ruler held immense power and influence.
+
+International teams of archaeologists and Egyptologists are now working around the clock to document and preserve the site, with more details expected to emerge in the coming weeks as further chambers are explored.
+
+The discovery has already begun to reshape our understanding of ancient Egyptian civilization and its early development.`,
     fullContent: `NASA has confirmed the groundbreaking discovery of an Earth-like planet orbiting a nearby star system, raising exciting possibilities about the existence of life beyond our solar system. The planet, named Kepler-186f, is located just 120 light-years away in the constellation Cygnus and is considered one of the most Earth-like exoplanets ever identified.
 
 Using data from the Transiting Exoplanet Survey Satellite (TESS) and the now-retired Kepler Space Telescope, scientists observed consistent transits indicating the presence of a rocky planet within the habitable zone—the region around a star where liquid water could potentially exist. This discovery marks a significant milestone in the ongoing search for potentially habitable worlds.
@@ -364,7 +294,15 @@ As NASA and other agencies continue to scan the skies, the discovery of Kepler-1
     id: 'protests-erupt',
     title: "Protests Erupt Nationwide After Several Police Incident",
     author: "Aaron Petterson",
-    content: 'A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby\'s auction in New York...',
+    content: `A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world's largest and oldest known tomb, dating back over 5,000 years. The massive burial complex, located near the ancient city of Saqgara, is believed to belong to a previously unknown pharaoh from the early dynastic period.
+
+The tomb spans several acres and contains intricate carvings, hieroglyphs, and over 100 burial chambers, some holding well-preserved mummies. Inside, researchers found a treasure trove of artifacts, including gold jewelry, ceremonial weapons, and pottery, offering new insights into early Egyptian civilization.
+
+Excavation teams are calling this discovery one of the most significant finds in decades, as it could rewrite parts of Egypt's history. Experts believe the sheer size and grandeur of the tomb suggest the buried ruler held immense power and influence.
+
+International teams of archaeologists and Egyptologists are now working around the clock to document and preserve the site, with more details expected to emerge in the coming weeks as further chambers are explored.
+
+The discovery has already begun to reshape our understanding of ancient Egyptian civilization and its early development.`,
     fullContent: `Massive protests have erupted across the United States following a string of controversial police incidents that have once again sparked nationwide conversations around law enforcement practices, racial justice, and public accountability. Demonstrators in dozens of cities, including New York, Los Angeles, Chicago, and Atlanta, have taken to the streets demanding justice and reform.
 
 The protests were triggered by a series of incidents involving law enforcement officers in multiple states, some of which were captured on video and quickly went viral on social media. One of the most widely circulated videos shows a police officer in Ohio using what many have described as excessive force during a traffic stop involving a young Black man. The individual was hospitalized with serious injuries, further fueling public outrage.
@@ -394,7 +332,15 @@ As protests continue to gain momentum, Americans are once again forced to confro
     id: 'rare-picasso-painting',
     title: "Rare Picasso Painting Sells for Record-Breaking $150 Million",
     author: "Manuel Pereira",
-    content: 'A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby\'s auction in New York...',
+    content: `A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world's largest and oldest known tomb, dating back over 5,000 years. The massive burial complex, located near the ancient city of Saqgara, is believed to belong to a previously unknown pharaoh from the early dynastic period.
+
+The tomb spans several acres and contains intricate carvings, hieroglyphs, and over 100 burial chambers, some holding well-preserved mummies. Inside, researchers found a treasure trove of artifacts, including gold jewelry, ceremonial weapons, and pottery, offering new insights into early Egyptian civilization.
+
+Excavation teams are calling this discovery one of the most significant finds in decades, as it could rewrite parts of Egypt's history. Experts believe the sheer size and grandeur of the tomb suggest the buried ruler held immense power and influence.
+
+International teams of archaeologists and Egyptologists are now working around the clock to document and preserve the site, with more details expected to emerge in the coming weeks as further chambers are explored.
+
+The discovery has already begun to reshape our understanding of ancient Egyptian civilization and its early development.`,
     fullContent: `A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby's auction in New York. The sale marks one of the highest prices ever paid for a work of art and has drawn global attention to the late Spanish master once again.
 
 The painting, believed to have been created during Picasso's formative Blue Period, was hidden from public view for over 70 years, residing in a private European collection. Experts only recently authenticated the piece, revealing its profound significance in understanding the artist’s transition from his early academic style to the emotionally resonant themes that characterized his later works.

@@ -6,6 +6,8 @@ import { ThemeProvider } from './context/ThemeContext';
 import './styles/globals.css';
 import Home from './pages/Home';
 import ArticleDetailPage from './pages/ArticleDetail';
+import CategoryPage from './pages/CategoryPage';
+import SearchResults from './pages/SearchResults';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/style-guide" element={<StyleGuide />} />
             <Route path="/article/:id" element={<ArticleDetailPage />} />
+            <Route path="/category/:category" element={<CategoryPage />} />
+            <Route path="/search" element={<SearchResults />} />
           </Routes>
           <Footer />
         </div>
