@@ -9,7 +9,7 @@ export interface Article {
     src: string;
     alt: string;
   };
-  category: 'news' | 'opinion' | 'sports' | 'arts';
+  category: 'news' | 'opinion' | 'sports' | 'arts' | 'art' | 'catastrophic' | 'historical';
   priority: 'main' | 'secondary' | 'tertiary';
   publishedAt: string;
   relatedArticles?: Article[];

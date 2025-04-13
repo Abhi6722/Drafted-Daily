@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Article } from '../types/article';
-import { Calendar, Share2 } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 const DetailContainer = styled.article`
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  width: 100%;
+`;
+
+const ArticleContent = styled.div`
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 `;
 
 const HeaderImage = styled.img`
   width: 100%;
   height: 400px;
   object-fit: cover;
-  margin-bottom: 2rem;
 `;
 
 const Title = styled.h1`
@@ -53,25 +55,10 @@ const Content = styled.div`
   }
 `;
 
-const ShareButton = styled.button`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--border-color);
-  background: none;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  
-  &:hover {
-    background-color: var(--paper-color);
-  }
-`;
-
 const RelatedArticles = styled.div`
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--border);
 `;
 
 const RelatedTitle = styled.h3`
@@ -82,7 +69,7 @@ const RelatedTitle = styled.h3`
 
 const RelatedGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 `;
 
@@ -108,39 +95,37 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
         />
       )}
       
-      <Title>{article.title}</Title>
-      {article.subtitle && <Subtitle>{article.subtitle}</Subtitle>}
-      
-      <MetaInfo>
-        <MetaItem>
-          <Calendar size={16} />
-          {formatDate(article.publishedAt)}
-        </MetaItem>
-        <MetaItem>By {article.author}</MetaItem>
-        <ShareButton>
-          <Share2 size={16} />
-          Share
-        </ShareButton>
-      </MetaInfo>
-      
-      <Content>
-        {article.fullContent?.split('\n\n').map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </Content>
-      
-      {article.relatedArticles && article.relatedArticles.length > 0 && (
-        <RelatedArticles>
-          <RelatedTitle>Related Articles</RelatedTitle>
-          <RelatedGrid>
-            {article.relatedArticles.map(related => (
-              <div key={related.id}>
-                {/* Related article preview component would go here */}
-              </div>
-            ))}
-          </RelatedGrid>
-        </RelatedArticles>
-      )}
+      <ArticleContent>
+        <Title>{article.title}</Title>
+        {article.subtitle && <Subtitle>{article.subtitle}</Subtitle>}
+        
+        <MetaInfo>
+          <MetaItem>
+            <Calendar size={16} />
+            {formatDate(article.publishedAt)}
+          </MetaItem>
+          <MetaItem>By {article.author}</MetaItem>
+        </MetaInfo>
+        
+        <Content>
+          {article.fullContent?.split('\n\n').map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </Content>
+        
+        {article.relatedArticles && article.relatedArticles.length > 0 && (
+          <RelatedArticles>
+            <RelatedTitle>Related Articles</RelatedTitle>
+            <RelatedGrid>
+              {article.relatedArticles.map(related => (
+                <div key={related.id}>
+                  {/* Related article preview component would go here */}
+                </div>
+              ))}
+            </RelatedGrid>
+          </RelatedArticles>
+        )}
+      </ArticleContent>
     </DetailContainer>
   );
 };

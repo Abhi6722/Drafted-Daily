@@ -5,6 +5,7 @@ import StyleGuide from './components/StyleGuide';
 import { ThemeProvider } from './context/ThemeContext';
 import './styles/globals.css';
 import Home from './pages/Home';
+import ArticleDetailPage from './pages/ArticleDetail';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/style-guide" element={<StyleGuide />} />
+            <Route path="/article/:id" element={<ArticleDetailPage />} />
           </Routes>
           <Footer />
         </div>

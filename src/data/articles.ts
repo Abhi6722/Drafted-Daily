@@ -1,6 +1,91 @@
 import { Article } from '../types/article';
+import Image1 from '../assets/images/image1.png';
+import Image2 from '../assets/images/image2.png';
+import Image3 from '../assets/images/image3.png';
 
 export const articles: Article[] = [
+  {
+    id: 'picasso-sale',
+    title: 'Record-Breaking Sale: Rare Picasso Painting Fetches $150 Million at Auction',
+    author: 'Johan.S',
+    content: 'A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby\'s auction in New York...',
+    fullContent: `A never-before-seen Pablo Picasso painting has shattered records, selling for an astonishing $150 million at a Sotheby's auction in New York. The sale marks one of the highest prices ever paid for a work of art.
+
+The newly discovered masterpiece, believed to have been created during Picasso's early career, was unveiled just weeks before the auction, causing a frenzy among collectors and art historians. Sotheby's described the painting as a 'once-in-a-lifetime find' that reflects the genius of Picasso's evolving style. The identity of the buyer has not yet been disclosed, but experts are already calling this sale a monumental moment in art history. The auction house confirmed that the bidding war for the piece was highly competitive, involving collectors from across the globe.
+
+The painting, which had remained in a private collection for over seven decades, represents a crucial transitional period in Picasso's artistic development. Art historians suggest that this work could provide new insights into the evolution of modern art in the early 20th century.
+
+The record-breaking sale has reignited discussions about the value of fine art in today's market and the continuing influence of Picasso's work on contemporary artists and collectors.`,
+    image: {
+      src: Image2,
+      alt: 'Rare Picasso Painting'
+    },
+    category: 'art',
+    priority: 'main',
+    publishedAt: '2024-12-24T09:00:00Z'
+  },
+  {
+    id: 'volcanic-eruption',
+    title: 'Catastrophic Volcanic Eruption in Indonesia Forces Mass Evacuations',
+    author: 'Milea Sandy E',
+    content: 'A massive volcanic eruption has struck Indonesia\'s Mount Merapi, sending towering ash clouds into the sky...',
+    fullContent: `A massive volcanic eruption has struck Indonesia's Mount Merapi, one of the most active volcanoes in the world, sending towering ash clouds 20,000 feet into the sky and triggering widespread evacuations. Authorities have issued the highest-level alert as lava flows rapidly down the mountainside, threatening nearby villages.
+
+Thousands of residents are fleeing their homes, while emergency services are mobilizing to respond to the disaster. Air traffic has been disrupted, with flights grounded across the region due to ash in the atmosphere, posing a significant hazard to aviation. Seismologists have warned that further eruptions are possible, as the volcano continues to rumble and emit gases. Rescue teams are on high alert, as officials prepare for potential pyroclastic flows and landslides. Residents are being urged to stay in safe zones as efforts to assess the full scale of the damage are underway.
+
+This eruption comes after weeks of increased seismic activity, making it one of the most severe volcanic events in recent history for Indonesia, a country located along the Pacific 'Ring of Fire.'
+
+Local authorities have established emergency shelters and are coordinating with national disaster response teams to ensure the safety of affected communities. Scientists continue to monitor the situation closely, using advanced monitoring equipment to predict potential developments and minimize risk to human life.`,
+    image: {
+      src: Image1,
+      alt: 'Mount Merapi Eruption'
+    },
+    category: 'catastrophic',
+    priority: 'main',
+    publishedAt: '2024-12-24T10:00:00Z'
+  },
+  {
+    id: 'black-fox',
+    title: 'Conservationist Discovered, Black Fox Species Thought to Have Vanished 1,000 Years Ago',
+    author: 'Krilivenko Pattey',
+    content: 'In a stunning discovery, a rare black fox species, long believed to have gone extinct, has been found alive...',
+    fullContent: `In a stunning discovery, a rarest black foxes species, that long believed to have gone extinct over 1,000 years ago, has been found alive in a remote region of northern of Scotland. The elusive big animal, known only through about ancient records and folklore, was spotted by several team of conservationists during a wildlife survey.
+
+The team responsible for the discovery is right now working with several local authorities and big wildlife experts to get protect the fragile population, which is estimated to be extremely small. Efforts to preserve the fox habitat and ensure theirs survival are already underway.
+
+This remarkable finding has excited the scientific community and wildlife conservationists worldwide. The discovery not only proves the species' survival but also raises hopes for other supposedly extinct species. Researchers are now planning detailed studies of the foxes' behavior, genetics, and habitat requirements to develop effective conservation strategies.
+
+The location of the population is being kept confidential to protect the animals from disturbance while conservation measures are put in place.`,
+    image: {
+      src: Image2,
+      alt: 'Rare Black Fox'
+    },
+    category: 'art',
+    priority: 'secondary',
+    publishedAt: '2024-12-24T11:00:00Z'
+  },
+  {
+    id: 'egypt-tomb',
+    title: 'Archaeologists Discover World\'s Largest and Oldest Tomb in Egypt',
+    author: 'Naheb Abimanyu',
+    content: 'A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world\'s largest and oldest known tomb...',
+    fullContent: `A groundbreaking discovery has been made in Egypt, where archaeologists have uncovered the world's largest and oldest known tomb, dating back over 5,000 years. The massive burial complex, located near the ancient city of Saqgara, is believed to belong to a previously unknown pharaoh from the early dynastic period.
+
+The tomb spans several acres and contains intricate carvings, hieroglyphs, and over 100 burial chambers, some holding well-preserved mummies. Inside, researchers found a treasure trove of artifacts, including gold jewelry, ceremonial weapons, and pottery, offering new insights into early Egyptian civilization.
+
+Excavation teams are calling this discovery one of the most significant finds in decades, as it could rewrite parts of Egypt's history. Experts believe the sheer size and grandeur of the tomb suggest the buried ruler held immense power and influence.
+
+International teams of archaeologists and Egyptologists are now working around the clock to document and preserve the site, with more details expected to emerge in the coming weeks as further chambers are explored.
+
+The discovery has already begun to reshape our understanding of ancient Egyptian civilization and its early development. The artifacts and architectural features found within the tomb complex provide unprecedented insights into the sophistication of early dynastic period construction techniques and burial practices.`,
+    image: {
+      src: Image3,
+      alt: 'Ancient Egyptian Tomb'
+    },
+    category: 'historical',
+    priority: 'main',
+    publishedAt: '2024-12-24T12:00:00Z'
+  },
   {
     id: '1',
     title: 'Historic Climate Agreement Reached at Global Summit',
