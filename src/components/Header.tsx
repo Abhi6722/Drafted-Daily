@@ -77,8 +77,8 @@ const Header = () => {
           <div className="w-px self-stretch bg-border relative before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:border-x-[6px] before:border-b-[9px] before:border-x-transparent before:border-b-border" />
 
           {/* Scrollable Menu Items */}
-          <div className="flex-1 px-6 overflow-x-auto scrollbar-hide">
-            <div className="flex items-center gap-10 min-w-max">
+          <div className="flex-1 px-6 overflow-x-hidden">
+            <div className="flex items-center gap-10 animate-scroll hover:pause">
               {[
                 'News',
                 'World',
@@ -99,6 +99,33 @@ const Header = () => {
               ].map((item) => (
                 <Link
                   key={item}
+                  to="#"
+                  className="text-sm font-medium text-text-primary hover:text-text-accent whitespace-nowrap transition"
+                >
+                  {item}
+                </Link>
+              ))}
+              {/* Duplicate items for seamless scrolling */}
+              {[
+                'News',
+                'World',
+                'Business',
+                'Art',
+                'Lifestyle',
+                'Sport',
+                'Opinion',
+                'Culture',
+                'Politic',
+                'Advertisement',
+                'Job Portal',
+                'Technology',
+                'Science',
+                'Health',
+                'Education',
+                'Entertainment'
+              ].map((item) => (
+                <Link
+                  key={`${item}-duplicate`}
                   to="#"
                   className="text-sm font-medium text-text-primary hover:text-text-accent whitespace-nowrap transition"
                 >

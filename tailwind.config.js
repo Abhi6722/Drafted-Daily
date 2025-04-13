@@ -47,6 +47,20 @@ export default {
         '5xl': ['3rem', { lineHeight: '1.16' }],
         '6xl': ['3.75rem', { lineHeight: '1.15' }],
       },
+      animation: {
+        scroll: 'scroll 40s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+    },
+  },
+  variants: {
+    extend: {
+      animation: ['hover', 'group-hover'],
     },
   },
   plugins: [

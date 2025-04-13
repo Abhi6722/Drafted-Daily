@@ -1,38 +1,41 @@
+import { useNavigate } from "react-router-dom";
+
 const PopularArticles = () => {
+  const navigate = useNavigate();
   const articles = [
     {
-      id: 1,
+      id: 'massive-wildfire',
       title: "Massive Wildfire Sweeps Across Northern California,...",
       date: "20 Dec 2024",
       author: "Johan Statman"
     },
     {
-      id: 2,
+      id: 'stock-market-plummets',
       title: "Stock Market Plummets Tech Report Quarterly Losses",
       date: "20 Dec 2024",
       author: "Manuel Pereira"
     },
     {
-      id: 3,
+      id: 'hurricane-fiona',
       title: "Hurricane Fiona Makes Landfall in Florida, Severe...",
       date: "19 Dec 2024",
       author: "Akhira Hinata"
     },
     {
-      id: 4,
+      id: 'earth-like-planet',
       title: "NASA Confirms Discovery of Earth-Like Planet in Nearby",
       date: "18 Dec 2024",
       author: "Rachel Velerossa T"
     },
     {
-      id: 5,
+      id: 'protests-erupt',
       title: "Protests Erupt Nationwide After Several Police Incident",
       date: "16 Dec 2024",
       author: "Aaron Petterson"
     },
     {
-      id: 6,
-      title: "Stock Market Plummets Tech Report Quarterly Losses",
+      id: 'rare-picasso-painting',
+      title: "Rare Picasso Painting Sells for Record-Breaking $150 Million",
       date: "20 Dec 2024",
       author: "Manuel Pereira"
     }
@@ -54,7 +57,9 @@ const PopularArticles = () => {
               {String(index + 1).padStart(2, '0')}
             </span>
             <div className="space-y-2">
-              <h4 className="font-medium text-lg text-foreground leading-tight">{article.title}</h4>
+              <h4 className="font-medium text-lg text-foreground leading-tight hover:underline cursor-pointer"
+                onClick={() => navigate(`/article/${article.id}`)}
+              >{article.title}</h4>
               <div className="text-sm text-text-secondary">
                 {article.date}, {article.author}
               </div>

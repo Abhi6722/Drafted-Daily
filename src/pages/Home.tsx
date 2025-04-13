@@ -22,7 +22,7 @@ const Home = () => {
                         author={picassoArticle?.author || ''}
                         date={new Date(picassoArticle?.publishedAt || '').toLocaleDateString('en-GB')}
                         image={picassoArticle?.image?.src}
-                        excerpt={picassoArticle?.fullContent || ''}
+                        excerpt={picassoArticle?.content || ''}
                     />
                     {/* First Divider - Triangle at Top */}
                     <div className="absolute top-0 right-0 h-full w-px bg-border before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:border-x-[6px] before:border-t-[9px] before:border-x-transparent before:border-t-border" />
@@ -37,7 +37,7 @@ const Home = () => {
                         author={volcanicArticle?.author || ''}
                         date={new Date(volcanicArticle?.publishedAt || '').toLocaleDateString('en-GB')}
                         image={volcanicArticle?.image?.src || ''}
-                        excerpt={volcanicArticle?.fullContent || ''}
+                        excerpt={volcanicArticle?.content || ''}
                     />
                     {/* Second Divider - Triangle at Bottom */}
                     <div className="absolute top-0 right-0 h-full w-px bg-border before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:border-x-[6px] before:border-b-[9px] before:border-x-transparent before:border-b-border" />
@@ -63,7 +63,7 @@ const Home = () => {
                             author={blackFoxArticle?.author || ''}
                             date={new Date(blackFoxArticle?.publishedAt || '').toLocaleDateString('en-GB')}
                             image={blackFoxArticle?.image?.src}
-                            excerpt={blackFoxArticle?.fullContent || ''}
+                            excerpt={blackFoxArticle?.content || ''}
                         />
                     </div>
                     <ComposerNeeded />
@@ -81,7 +81,7 @@ const Home = () => {
                         author={egyptTombArticle?.author || ''}
                         date={new Date(egyptTombArticle?.publishedAt || '').toLocaleDateString('en-GB')}
                         image={egyptTombArticle?.image?.src || ''}
-                        excerpt={egyptTombArticle?.fullContent || ''}
+                        excerpt={egyptTombArticle?.content || ''}
                         orientation="vertical"
                     />
                 </div>
